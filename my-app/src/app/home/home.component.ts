@@ -24,6 +24,7 @@ export class HomeComponent {
   ngOnInit(): void {
     this.sweets = this.sweetService.getProducts();
   }
+  // my changes 
   getStatusTooltip(status: string): string {
     switch (status) {
       case 'assets/green.png': 
