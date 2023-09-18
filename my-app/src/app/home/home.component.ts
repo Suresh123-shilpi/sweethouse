@@ -26,7 +26,7 @@ export class HomeComponent {
   }
   getStatusTooltip(status: string): string {
     switch (status) {
-      case 'assets/green.png':
+      case 'assets/green.png': 
         return 'Available';
       case 'assets/yellow.png':
         return 'Yet to be reay';
