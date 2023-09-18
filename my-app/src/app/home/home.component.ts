@@ -26,11 +26,8 @@ export class HomeComponent {
   }
   // chanes
   // my changes 
-<<<<<<< HEAD
   // new changes
-=======
   // my changes dev
->>>>>>> dev
   getStatusTooltip(status: string): string {
     switch (status) {
       case 'assets/green.png': 
