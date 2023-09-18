@@ -1,0 +1,46 @@
+.image-dialog-cls{
+    width: 40%;
+    height: 40%;
+    margin: 10px;
+    border-radius: 10px;
+}
+.div-cls1{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+}
+.div-cls2{
+    display: inline;
+    margin: 15px;
+}
+.btn-cls{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+}
+.dialog-img-cls{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px;
+
+}
+.status-cls {
+    width: 20px;
+    height: 20px;
+ }
+ .ellipsis {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    width: calc(100% - 40px);
+    /* Optional: Add this rule to specify where the tooltip should appear */
+    position: relative;
+    font-size: larger;
+
+  }
+  
+  .span-cls{
+    font:bold;
+  }

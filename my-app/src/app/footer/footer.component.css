@@ -1,0 +1,26 @@
+/* footer.component.css */
+.sweet-shop-footer {
+    background-color: rgb(43, 35, 35); /* Set the background color to a soft color */
+    padding: 0px 0; /* Add padding for spacing */
+  }
+  
+  .sweet-shop-footer h3 {
+    color: #ff8a00; /* Set the heading color to an orange tone */
+  }
+  
+  .sweet-shop-footer ul {
+    list-style-type: none; /* Remove bullet points from the list */
+  }
+  
+  .sweet-shop-footer a {
+    color: #ff8a00; /* Set link color to match the heading color */
+    text-decoration: none; /* Remove underlines from links */
+  }
+  .address-cls{
+    color: white;
+  }
+  .about-cls{
+    color: white;
+  }
+  /* Add more styles as needed to achieve the desired look */
+  

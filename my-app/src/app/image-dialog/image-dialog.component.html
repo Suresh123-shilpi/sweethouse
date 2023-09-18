@@ -1,0 +1,15 @@
+<!-- image-dialog.component.html -->
+<div class="dialog-img-cls">
+<h2>Image Preview</h2>
+<div class="div-cls1">
+<img [src]="imageUrl" alt="Image" class="image-dialog-cls">
+<div class="div-cls2">
+<h3>Name: {{name}}</h3>
+<p class="ellipsis">Status: <img [src]="status" alt="{{ status }}" class="status-cls"></p>
+<h3>Description: {{description}}</h3>
+</div>
+</div>
+<div class="mat-dialog-actions btn-cls">
+  <button mat-button class="primary" (click)="closeDialog()">Close</button>
+</div>
+</div>

@@ -1,0 +1,22 @@
+<!-- home.component.html -->
+<div class=" container-cls">
+    <div class="row row-cls" >
+        <div class="title-cls">
+        <h2 class="hr-cls">Sweet-House</h2>
+    </div>
+    
+      <div class="col-md-2 mat-cls" *ngFor="let sweet of sweets">
+        <mat-card class="sweet-card" [class.bounce-card]="isBouncing" (animationend)="resetBounce()">
+          <img [src]="sweet.imageUrl" alt="{{ sweet.name }}" class="sweet-image" (dblclick)="openImageDialog(sweet)">
+          <mat-card-content>
+            <h2 class="ellipsis" [matTooltip]="sweet.name">{{ sweet.name }}</h2>
+            <!-- <p class="ellipsis" [matTooltip]="sweet.description">{{ sweet.description }}</p> -->
+
+            <p [matTooltip]="getStatusTooltip(sweet.status)">Status: <img [src]="sweet.status" alt="{{ sweet.status }}" class="ellipsis status-cls"></p>
+
+          </mat-card-content> 
+        </mat-card>
+      </div>
+    </div>
+  </div>
+  
