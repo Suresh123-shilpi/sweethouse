@@ -25,6 +25,7 @@ export class HomeComponent {
     this.sweets = this.sweetService.getProducts();
   }
   // my changes 
+  // my changes dev
   getStatusTooltip(status: string): string {
     switch (status) {
       case 'assets/green.png': 
