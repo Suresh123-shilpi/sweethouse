@@ -7,12 +7,12 @@
     
       <div class="col-md-2 mat-cls" *ngFor="let sweet of sweets">
         <mat-card class="sweet-card" [class.bounce-card]="isBouncing" (animationend)="resetBounce()">
-          <img [src]="sweet.imageUrl" alt="{{ sweet.name }}" class="sweet-image" (dblclick)="openImageDialog(sweet)">
+          <img mat-card-image [src]="sweet.imageUrl" alt="{{ sweet.name }}" class="sweet-image" (dblclick)="openImageDialog(sweet)">
           <mat-card-content>
-            <h2 class="ellipsis" [matTooltip]="sweet.name">{{ sweet.name }}</h2>
+            <mat-card-title class="ellipsis" [matTooltip]="sweet.name">{{ sweet.name }}</mat-card-title>
             <!-- <p class="ellipsis" [matTooltip]="sweet.description">{{ sweet.description }}</p> -->
 
-            <p [matTooltip]="getStatusTooltip(sweet.status)">Status: <img [src]="sweet.status" alt="{{ sweet.status }}" class="ellipsis status-cls"></p>
+            <mat-card-subtitle [matTooltip]="getStatusTooltip(sweet.status)">Status: <img [src]="sweet.status" alt="{{ sweet.status }}" class="ellipsis status-cls"></mat-card-subtitle>
 
           </mat-card-content> 
         </mat-card>

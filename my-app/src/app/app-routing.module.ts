@@ -5,15 +5,13 @@ import { HomeComponent } from './home/home.component';
 
 const routes: Routes = [
   {
-    path: 'sweet', // Add the 'sweet' prefix to all child routes
+    path: 'sweet',
     children: [
       { path: '', redirectTo: 'home', pathMatch: 'full' },
       { path: 'home', component: HomeComponent },
       { path: 'about', component: AboutComponent },
-      // Add more child routes for other components
     ],
   },
-  // Add additional top-level routes if needed
 ];
 
 @NgModule({
